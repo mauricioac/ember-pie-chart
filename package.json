@@ -1,7 +1,7 @@
 {
   "name": "ember-pie-chart",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A simple pie chart component inspired by a talk by Lea Verou.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -35,7 +35,7 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon", "chart", "pie chart", "pie"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"

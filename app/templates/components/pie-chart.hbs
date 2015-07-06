@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" class="ember-pie-chart__chart">
+  {{#each calculatedSeries as |data|}}
+    <circle r="25%" cx="50%" cy="50%" stroke-dasharray="{{data.value}} 100" stroke="{{data.color}}" stroke-dashoffset="{{data.offset}}" class="ember-pie-chart__chart-circle"></circle>
+  {{/each}}
+</svg>
+
+{{#if showLegend}}
+  <div class="ember-pie-chart__legend">
+    {{#each calculatedSeries as |data|}}
+      <div class="ember-pie-chart__legend-item">
+        <div class="ember-pie-chart__legend-color" style="background: {{data.color}}"></div>
+        <span class="ember-pie-chart__legend-title">
+          {{data.title}}
+        </span>
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

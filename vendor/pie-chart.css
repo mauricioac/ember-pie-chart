@@ -1,0 +1,34 @@
+.ember-pie-chart {
+
+}
+
+.ember-pie-chart__chart {
+  background: #d0d0d0;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  width: 20em;
+}
+
+.ember-pie-chart__chart-circle {
+  fill: none;
+  stroke-width: 32;
+}
+
+.ember-pie-chart__legend {
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.ember-pie-chart__legend-item {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.ember-pie-chart__legend-color {
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  border-radius: 50%;
+}
