@@ -5,9 +5,9 @@ This work was inspired by a Lea Verou's talk called [The Missing Slice](https://
 
 It is usable, but it lacks some things (in order of importance?):
 
-- [ ] Change base chart color (in case only one slice is provided)
+- [X] Change base chart color (in case only one slice is provided)
 - [ ] Cross browser test
-- [ ] Animations
+- [X] Animations
 - [ ] Tests
 - [ ] Hover labels
 - [ ] Slice highlighting

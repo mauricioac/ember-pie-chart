@@ -1,7 +1,5 @@
-<svg viewBox="0 0 64 64" class="ember-pie-chart__chart">
-  {{#each calculatedSeries as |data|}}
-    <circle r="25%" cx="50%" cy="50%" stroke-dasharray="{{data.value}} 100" stroke="{{data.color}}" stroke-dashoffset="{{data.offset}}" class="ember-pie-chart__chart-circle"></circle>
-  {{/each}}
+<svg viewBox="0 0 64 64" class="ember-pie-chart__chart" style="background: {{baseColor}}">
+  {{yield}}
 </svg>
 
 {{#if showLegend}}

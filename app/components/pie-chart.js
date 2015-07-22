@@ -7,7 +7,6 @@ export default Ember.Component.extend({
     var offset = 0;
     var series = this.get("series");
     var newSeries = [];
-    console.log(series.length);
 
     for (var i = 0; i < series.length; i++) {
       newSeries.push({
@@ -22,5 +21,6 @@ export default Ember.Component.extend({
 
     return newSeries;
   }.property("series.@each.value"),
-  showLegend: false
+  showLegend: false,
+  baseColor: "#d0d0d0"
 });
