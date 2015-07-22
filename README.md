@@ -31,21 +31,28 @@ ember install ember-pie-chart
 
 ### Usage
 
-Easy peasy. On your templates, just use it as a normal component, like so:
+On your templates, include the pie chart and add your slices with loops so you don't have to build the data on controllers before displaying.
 
 ```
-{{pie-chart series=myData showLegend=true}}
+{{#pie-chart}}
+  {{#each series as |data|}}
+    {{pie-slice value=data.value color=data.color}}
+  {{/each}}
+{{/pie-chart}}
 ```
 
-You see here that you pass a `series` parameter, which is an array of objects, with the following properties:
+Slice options you can pass for the component:
 
 - color: The color to be used on the slice and legend (if enabled)
 - title: Title to show on legend and, on the future, on hovers
 - value: The value in percentage of the slice
 
-Also, it is possible to see that you can opt in to show or not the chart's legend, using the param `showLegend`, which is **false** by default.
-
 ## Changelog
+
+##### Version 0.0.2
+
+- Enabling slice composability
+- Adding animations without dependencies
 
 ##### Version 0.0.1
 
