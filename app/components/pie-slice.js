@@ -4,8 +4,7 @@ export default Ember.Component.extend({
   tagName: "circle",
   classNames: ["ember-pie-chart__chart-circle"],
   value: 0,
-  offset: 0,
-  duration: 200,
+  duration: 400,
   didInsertElement: function() {
     this.$().attr("r", "25%");
     this.$().attr("cx", "50%");
